@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,600;0,700;1,400&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+
+canvas{
+    background-color: rgb(49,49,49);
+    min-width: 100%;
+    min-height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.scoreBoard {
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    color: white;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    display: none;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.158);
+    height: 60vh;
+    width: 60vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+form > select , form select option{
+    padding: 2vmax;
+    width: 20vw;
+    text-align: center;
+    font-size: 1.4vmax;
+    outline: none;
+    transition: all 0.4s;
+    border: none;
+}
+.level option{
+    margin: 3rem;
+}
+form > input{
+    margin: 2vmax;
+    padding: 2vmax;
+    width: 20vw;
+    text-align: center;
+    font-size: 1.4vmax;
+    outline: none;
+    color: white;
+    cursor: pointer;
+    background-color: rgb(231, 93, 93);
+    transition: all 0.4s;
+    border: none;
+}
+
+form > select:hover{
+    box-shadow: 0 0 10px white;
+}
+
+form > input:hover{
+    box-shadow: 0 0 10px white;
+    background-color: rgb(230, 62, 126);
+}
+
+
+
+
+.gameOverBanner{
+    background-color: rgb(141, 209, 78);
+    border-radius: 20px;
+    color: rgba(24, 21, 21, 0.767);
+    height: 30vh;
+    width: 30vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow:  0 0 7px white;
+    display: none;
+}
+
+.playAgainBtn {
+    font-size: 1rem;
+    padding: 1rem;
+    outline: none;
+    border: none;
+    color: rgb(209, 209, 103);
+    background-color: rgb(168, 36, 36);
+    font-weight: 600;
+    transition: all 0.5s;
+    border-radius: 10px;
+}
+
+.playAgainBtn:hover{
+    box-shadow: 0 0 10px rgb(34, 33, 33);
+}
