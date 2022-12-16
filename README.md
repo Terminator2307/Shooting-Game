@@ -1,3 +1,6 @@
+
+link :- https://shooting-game-ecru.vercel.app/
+
 Rules
 
 1. Killing each enemy will give you 10 points.
